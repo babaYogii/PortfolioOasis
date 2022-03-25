@@ -1,0 +1,496 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    /* background-color: rgb(247, 231, 247); */
+}
+.sidebar{
+    z-index: 10;
+    background-color:rgb(160, 153, 153);
+    /* width: 10vw; */
+    font-family: "fira sans";
+    height: 100vh;
+position: absolute;
+transition: transform 0.3s ease-in;
+}
+.sidebar nav{
+    padding: 10px;
+}
+.sidebar nav li {
+    font-size: 1.8em;
+    list-style: none;
+    padding: 34px 0px;
+}
+.sidebar nav ul li a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+.main{
+    /* margin-left: 120px; */
+    width: 90vw;
+    /* background-color: yellow; */
+}
+.container{
+    display: flex;
+}
+.infocontainer{
+    /* background-color: rgb(223, 213, 213); */
+    height: 50vh;
+    width: 80vw;
+    margin: 147px auto;
+    display: flex;
+    justify-content: space-around;
+
+}
+.devpic img {
+    width: 40vh;
+    border-radius: 30px;
+    height: 50vh;
+    box-shadow: honeydew;
+
+}
+.info{
+    color: black;
+    font-size: 24px;
+    /* align-items: center; */
+    display: flex;
+    flex-direction: column;
+    /* text-align: center; */
+    justify-content: center;
+}
+.hello{
+    font-family: 'Spline Sans', sans-serif;
+    font-size: 56px;
+}
+.name{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 35px;
+}
+.About{
+    font-size: 25px;
+    font-family: "fira sans";
+}
+.More{
+    margin-bottom: 30px;
+    font-size: 18px;
+    padding: 8px;
+}
+#emailHelp{
+    font-size: 10px;
+    color: rgb(168, 167, 167);
+    margin: 0px 8px;
+}
+.contactform{
+    /* margin-left: 120px; */
+    padding: 0px 34px;
+    padding-top:120px ;
+    font-family: "fira sans";
+
+}
+.contactform h1{
+    font-family: 'Spline Sans', sans-serif;
+    /* text-align: center; */
+    padding: 12px 0;
+}
+.contactform form div{
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+.contactform form div input{
+    width: 20vw;
+    border-radius:5px ;
+    margin: 6px 0;
+    padding: 3px;
+}
+
+#form-check{
+    flex-direction: row;
+}
+#form-check input{
+    width: 24px;
+    margin: 3px 0;
+}
+/* .button button{
+    background-color:rgb(183, 223, 65) ;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    /* margin: 4px; */
+    /* padding: 3px 5px; 
+    border-radius: 8px;
+    box-shadow: rgb(219, 219, 210) 3px 8px 8px;
+/* }  */
+
+.button{
+    background-color:blueviolet;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0px 6px;
+    padding: 3px 5px;
+    border-radius: 8px;
+    box-shadow: rgb(64, 84, 126) 3px 8px 8px;
+}
+.blogcontainer{
+    margin-left: 120px;
+    margin-top: 80px;
+}
+.button:hover{
+    background-color:white;
+    color: blueviolet;
+    font-weight: bold;
+}
+.blogcontainer h1{
+    margin: 23px;
+    font-family: "fira sans";
+}
+.blogitem{
+    font-family: 'Spline Sans', sans-serif;
+    
+    margin: 20px;
+}
+.intro h1{
+    font-family: "fira sans";
+    
+}
+.intro h2{
+    font-family: "fira sans";
+    margin: 12px 12px;
+}
+.intro{
+    margin-top: 2em;
+    width: 300vh;
+}
+.skillitem{
+margin: 6px 0px;
+font-size: 0.8em;
+    font-family: 'Spline Sans', sans-serif;
+font-weight: bold;
+}
+.intro p{
+    font-family: 'Spline Sans', sans-serif;
+}
+.hundred{
+    background-color: rgb(177, 205, 243);
+    height: 20px;
+    border: 2px solid rgb(247, 210, 210);
+    position: relative;
+    animation-name: hundred;
+    animation-duration:3s;
+    animation-fill-mode: forwards;
+    animation-direction: forwards;
+    border-radius:7px ;
+}
+.sixty{
+
+    background-color: #f7cac9;
+       height: 1em;
+    border: 2px solid rgb(247, 210, 210);
+    position: relative;
+    animation-name: sixty;
+    animation-duration:6s;
+    animation-fill-mode: forwards;
+    animation-direction: forwards;
+    border-radius:7px ;
+}
+.fifty{
+    background-color: #6b5b95;
+    height: 1em;
+    border: 0.3em solid rgb(247, 210, 210);
+    position: relative;
+    animation-name: fifty;
+    animation-duration:6s;
+    animation-fill-mode: forwards;
+    animation-direction: forwards;
+    border-radius: 7px;
+}.thirty{
+    background-color: #92a8d1;
+    height: 1em;
+    border: 0.3em solid rgb(247, 210, 210);
+    position: relative;
+    animation-name: thirty;
+    animation-duration:6s;
+    animation-fill-mode: forwards;
+    animation-direction: forwards;
+    border-radius: 7px;
+}
+.seventy{
+    background-color: rgb(179, 243, 179);
+    height: 1em;
+    border: 0.3em solid rgb(247, 210, 210);
+    position: relative;
+    animation-name: seventy;
+    animation-duration:6s;
+    animation-fill-mode: forwards;
+    animation-direction: forwards;
+    border-radius: 7px;
+}
+@keyframes hundred {
+    from {
+        width: 0px;
+    }
+    to {
+        width: 300px;
+    }
+}
+@keyframes sixty {
+    from {
+        width: 0px;
+    }
+    to {
+        width: 170px;
+    }
+}
+@keyframes fifty {
+    from {
+        width: 0px;
+    }
+    to {
+        width: 200px;
+    }
+}
+@keyframes seventy {
+    from{
+        width: 0px;
+    }
+    to{
+        width: 250px;
+    }
+}
+@keyframes thirty {
+    from {
+        width: 0px;
+    }
+    to {
+        width: 120px;
+    }
+}
+.skillconatiner{
+    width: 400px;
+    height: 400px;
+    margin: 25px 0px;
+/* border:2px solid black; */
+padding: 18px 30px;
+padding-left: 0px;
+}
+.skillconatiner h2{
+    margin: 17px 0px;
+    
+    /* font-size: 34 px; */
+    /* text-decoration: underline rgb(211, 201, 197); */
+    /* width: 40vw; */
+}
+.Education h2{
+    text-decoration: underline rgb(211, 201, 197);
+
+}
+.Education {
+    /* width: 60vw; */
+    margin: 30px 0px;
+    /* text-align: center; */
+}
+
+.Education p {
+    /* text-align: center; */
+    font-family: "fira sans";
+    margin: 0px 18px;
+    margin-top: 8px;
+}
+
+.flll{
+    display: flex;
+    justify-content: space-evenly;
+}
+.flll h2{
+font-size: 2.3rem;
+/* text-decoration: underline cornflowerblue; */
+
+}
+
+.socialmedia h2{
+    font-family: "fira sans" ;
+    margin-top: 24px;
+
+
+}
+.socialmedia
+{   margin: 25px 10px;
+    /* border-left: 2px solid black; */
+    height: 438px;
+    width: 500px;
+    /* text-align: center; */
+}
+ .media li {
+     list-style: none;
+     font-family: 'Courier New', Courier, monospace;
+     margin: 10px;
+     font-weight: bold;
+ }
+.media a{
+
+text-decoration: none;
+color: black;
+font-size: 20px;
+margin-left: 60px;
+}
+.myProjects{
+    display: flex;
+    justify-content: space-around;
+}
+.myProjects h3{
+    font-family: "fira sans" ;
+    font-size: 2.3em;
+    padding: 20px 0px;
+}
+.myProjects ul li{
+    list-style:decimal;
+}
+.major{
+    padding: 16px;
+    /* font-size: 2.6em; */
+    /* border: 2px solid red; */
+}
+
+.myProjects ul li a{
+    text-decoration: none;
+     color: black;
+    font-family: "fira sans" ;
+}
+
+.mini{
+    padding: 16px;
+    /* border: 2px solid red; */
+}
+.iti{
+    font-size: 1.8em;
+}
+#head{
+    font-size: 3em;
+    font-family:  sans-serif;
+}
+.body{
+background-color: rgb(216, 213, 213);
+}
+.services h2 {
+    text-align: center;
+    padding: 1em;
+    font-size: 2.5em;
+    font-family: 'Fira Sans';
+    color: rgb(218, 66, 205);
+}
+.pservice{
+    /* border: 2px solid blue; */
+    text-align: center;
+    margin-top: 2em;
+}
+.pservice h3{
+    font-size: 2em;
+    margin-bottom: 0.8em;
+}
+.pservice p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1.4em;
+    margin-bottom: 1em;
+}
+.sample{
+    margin-left: 25px;
+}
+.sample h3{
+    margin-top: 4em;
+ font-size: 2em;
+}
+.sample li{
+ list-style: none;
+ margin:1.5em;
+ }
+.sample li a{
+    text-decoration: none;
+    font-size: 1.5em;
+}
+#bt{
+    margin-left: 40px;
+    font-size: 1.3em;
+    padding: 2px;
+    font-family: "sans-serif";
+    background-color: blanchedalmond;
+    border-radius: 8px ;
+}
+#bt:hover{
+    background-color: rgb(136, 132, 132);
+    color:blanchedalmond;
+}
+.change-content:after{
+content: '';
+font-size: 0.7em;
+animation: changetext 5s infinite ease-in;
+color: rgb(190, 16, 190);
+    
+}
+
+
+@keyframes changetext {
+    0%{content:"Business";
+        font-size: 0.8em;
+    }
+    30%{content:"Shop";
+    font-size: 2em;
+}
+
+   100%{content:"Mini-Business";
+    font-size:2.3em;}
+}
+   #hs{
+  height: 2em;
+}
+.sidebarGo{
+    
+    transform: translate(-443px,0px);
+    position: absolute;
+}
+.na{
+    transform: translate(-443px,0px);
+    position: absolute;
+}
+.hamburger{
+    z-index: 10;
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left:10px ;
+}
+.cross{
+    z-index: 10;
+    /* margin-bottom: 100px; */
+    margin-left: 88px;
+
+}
+
+@media (max-width:1244px ) {
+   /* *{background-color: rgb(194, 173, 173);} */
+   .devpic{
+       display:none;
+   }
+   }
+@media (max-width:1000px ) {
+   .flll{
+       display: flex;
+       flex-direction: column;
+   }
+   .sidebarGo{
+    transform: translate(-443px,0px);
+    position: absolute;
+}
+
+   .devpic{
+       display:none;
+   }
+   }
+   .back{
+       background-color: rgb(241, 214, 219);
+       height:50em;
+   }
