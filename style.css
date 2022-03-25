@@ -45,6 +45,14 @@ transition: transform 0.3s ease-in;
     justify-content: space-around;
 
 }
+.infocontainer button a{
+    text-decoration: none;
+    color: white;
+}
+.infocontainer button a :hover{
+    text-decoration: none;
+    color: purple;
+}
 .devpic img {
     width: 40vh;
     border-radius: 30px;
@@ -140,7 +148,7 @@ transition: transform 0.3s ease-in;
     margin-top: 80px;
 }
 .button:hover{
-    background-color:white;
+    background-color:black;
     color: blueviolet;
     font-weight: bold;
 }
@@ -458,9 +466,10 @@ color: rgb(190, 16, 190);
 }
 .hamburger{
     z-index: 10;
+    opacity: 10;
     position: absolute;
     cursor: pointer;
-    top: 10px;
+    top: 15px;
     left:10px ;
 }
 .cross{
